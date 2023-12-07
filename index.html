@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superhero Information</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- You can create a separate CSS file for styling -->
+  </head>
+  <body>
+    <div id="superhero-container"></div>
+
+    <div id="pagination">
+      <label for="pageSize">Page Size:</label>
+      <select id="pageSize">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20" selected>20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="all">All Results</option>
+      </select>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Your JavaScript file -->
+    <script>
+      // Dark/Light mode toggle
+      var darkModeToggle = document.getElementById("darkModeToggle");
+      darkModeToggle.addEventListener("change", function () {
+        if (darkModeToggle.checked) {
+          document.body.classList.add("dark-mode");
+        } else {
+          document.body.classList.remove("dark-mode");
+        }
+      });
+    </script>
+  </body>
+</html>
